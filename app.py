@@ -2,7 +2,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route("/", methods=["POST", "GET", "UPDATE"])
+@app.route("/", methods=["POST", "GET", "UPDATE", "delete"])
 def hook():
     print("Helllo")
     return "demo helllo"
